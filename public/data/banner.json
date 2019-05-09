@@ -1,0 +1,22 @@
+{
+    "imgList":[
+        {
+            "src":"./1.jpg",
+            "title":"图片说明"},
+        {
+            "src":"http://seopic.699pic.com/photo/40006/7029.jpg_wh1200.jpg",
+            "title":"图片说明"},
+        
+        {
+            "src":"http://seopic.699pic.com/photo/50045/8274.jpg_wh1200.jpg",
+            "title":"图片说明"},
+        
+        {
+            "src":"http://seopic.699pic.com/photo/50042/4367.jpg_wh1200.jpg",
+            "title":"图片说明"},
+        {
+            "src":"http://seopic.699pic.com/photo/50060/4798.jpg_wh1200.jpg",
+            "title":"图片说明"}
+
+  ]
+}
