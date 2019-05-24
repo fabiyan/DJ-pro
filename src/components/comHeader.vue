@@ -35,7 +35,7 @@
           <div :style="showlist4" class="show-lists">
           <ul class="ul-list">
             <li><router-link to="/minzhushenghuohui" class="text-dec font-color">民主生活会</router-link></li>
-            <li><router-link to="/luntan" class="text-dec font-color">党课学习</router-link></li>
+            <li><router-link to="/luntan" class="text-dec font-color">论坛</router-link></li>
           </ul>
           </div>
       </div>
@@ -70,19 +70,19 @@ export default {
     },
     mouseup3(){
       // this.showlist=!this.showlist;
-      this.showlist2="display:block"
+      this.showlist3="display:block"
     },
     mouseleave3(){
       // this.showlist=!this.showlist;
-      this.showlist2="display:none"
+      this.showlist3="display:none"
     },
     mouseup4(){
       // this.showlist=!this.showlist;
-      this.showlist2="display:block"
+      this.showlist4="display:block"
     },
     mouseleave4(){
       // this.showlist=!this.showlist;
-      this.showlist2="display:none"
+      this.showlist4="display:none"
     }
   }
 }
