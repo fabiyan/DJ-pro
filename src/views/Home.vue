@@ -3,7 +3,7 @@
     <!-- 轮播图与登陆注册 -->
     <div class="con">
       <!-- 轮播图 -->
-      <Swiper v-if="list.length > 0" class="banner-swipe">
+      <Swiper v-if="list.length > 0" class="banner-swipe" interval="1500" duration="500">
        <Slide v-for="(obj,index) in list" :key="index">
          <img :src="obj.src" alt="" class="slide-img">
        </Slide>
@@ -66,7 +66,14 @@
           </ul>
         </div>
     </div>
- 
+ <!-- 可点击跳转轮播图 -->
+ <div class="click-banner">
+   <Swiper v-if="list.length > 0" class="click-banner-swipe" interval="2500" duration="500">
+       <Slide v-for="(obj,index) in list" :key="index">
+         <router-link :to="{name:'bannerDetail', params: {Detail:obj}}"><img :src="obj.src" alt="" class="click-slide-img"></router-link>
+       </Slide>
+      </Swiper>
+ </div>
   </div>
 </template>
 
@@ -316,5 +323,16 @@ export default {
   left:5px;
   bottom:-5px;
   font-size:13px;
+}
+.click-banner-swipe {
+  /* height:260px;*/
+  width:680px;
+  background: pink;
+  border-radius: 5px;
+  float:left;
+}
+.click-slide-img {
+  width:680px;
+  height:260px;
 }
 </style>
