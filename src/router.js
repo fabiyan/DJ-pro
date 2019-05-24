@@ -20,6 +20,7 @@ import shangjiwenjian from './components/pxxx/shangjiwenjian.vue'
 import minzhushenghuohui from './components/dyjl/minzhushenghuohui.vue'
 import luntan from './components/dyjl/luntan.vue'
 
+import bannerDetail from './components/bannerDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -87,6 +88,12 @@ export default new Router({
     {
       path:'/newList',
       component: newList
+    },
+    // 点击第二个轮播图的详情页
+    {
+      path:'/bannerDetail',
+      name:'bannerDetail',
+      component:bannerDetail
     }
   ]
 })
